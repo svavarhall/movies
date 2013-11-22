@@ -1,0 +1,547 @@
+{
+  "results": [
+    {
+      "title": "Free Birds",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "5.1/10  696 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8716_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "15:20 (3D )",
+            "15:20",
+            "17:40"
+          ]
+        },
+        {
+          "theater": "Borgarbíó",
+          "schedule": [
+            "18:00 (3D )"
+          ]
+        },
+        {
+          "theater": "Laugarásbíó",
+          "schedule": [
+            "18:00 (3D )"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Philomena",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "7.5/10  744 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8984_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "17:45",
+            "20:00",
+            "22:15"
+          ]
+        },
+        {
+          "theater": "Borgarbíó",
+          "schedule": [
+            "20:00",
+            "22:00"
+          ]
+        },
+        {
+          "theater": "Laugarásbíó",
+          "schedule": [
+            "17:50",
+            "20:00",
+            "22:10"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Thor: The Dark World",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "7.8/10  21,582 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/7861_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "17:30 (3D )",
+            "17:30 (3DLÚX )",
+            "20:00 (3D )",
+            "20:00 (3DLÚX )",
+            "22:30 (3D )",
+            "22:30 (3DLÚX )"
+          ]
+        },
+        {
+          "theater": "Sambíóin Álfabakka",
+          "schedule": [
+            "17:30 (1)",
+            "17:30 (Vip)",
+            "20:00 (1)",
+            "20:00 (Vip)",
+            "22:10 (A)",
+            "22:30 (Vip)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Kringlunni",
+          "schedule": [
+            "17:30 (1)",
+            "20:00 (1)",
+            "22:30 (1)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Egilshöll",
+          "schedule": [
+            "17:30 (1)",
+            "20:00 (1)",
+            "22:30 (1)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Akureyri",
+          "schedule": [
+            "17:30 (A)",
+            "20:00 (A)",
+            "22:30 (A)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Keflavík",
+          "schedule": [
+            "17:40 (1)",
+            "20:00 (1)",
+            "22:20 (1)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bad Grandpa",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "7.0/10  8,332 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/jackass-presents-bad-grandpa-poster-535x838-1377541246.jpg",
+      "showtimes": [
+        {
+          "theater": "Sambíóin Álfabakka",
+          "schedule": [
+            "17:50 (A)",
+            "20:00 (A)",
+            "22:30 (1)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Kringlunni",
+          "schedule": [
+            "17:50 (2)",
+            "20:00 (3)",
+            "23:00 (2)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Egilshöll",
+          "schedule": [
+            "17:50 (2)",
+            "20:00 (2)",
+            "22:10 (2)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Akureyri",
+          "schedule": [
+            "20:00 (B)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Keflavík",
+          "schedule": [
+            "17:50 (2)",
+            "20:00 (2)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Captain Phillips",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "8.1/10  26,746 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/7842_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "17:00",
+            "20:00",
+            "22:45"
+          ]
+        },
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "22:00"
+          ]
+        },
+        {
+          "theater": "Borgarbíó",
+          "schedule": [
+            "20:00"
+          ]
+        },
+        {
+          "theater": "Laugarásbíó",
+          "schedule": [
+            "18:00",
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Insidious: Chapter 2",
+      "released": "2013",
+      "restricted": "16 ára",
+      "imdb": "7.0/10  17,315 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8753_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "20:00",
+            "22:20"
+          ]
+        },
+        {
+          "theater": "Borgarbíó",
+          "schedule": [
+            "22:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paradise: Faith",
+      "released": "2012",
+      "restricted": "16 ára",
+      "imdb": "6.8/10  1,047 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8969_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Bíó Paradís",
+          "schedule": [
+            "17:45",
+            "20:00",
+            "22:15"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Disconnect",
+      "released": "2012",
+      "restricted": "12 ára",
+      "imdb": "7.5/10  18,809 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8596_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Sambíóin Kringlunni",
+          "schedule": [
+            "17:20 (3)",
+            "22:10 (3)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Akureyri",
+          "schedule": [
+            "17:20 (B)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Keflavík",
+          "schedule": [
+            "22:10 (2)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Frances Ha",
+      "released": "2012",
+      "restricted": "7 ára",
+      "imdb": "7.6/10  6,164 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8632_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "18:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gravity",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "8.5/10  122,402 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/7743_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "20:00 (3D )",
+            "22:15 (3D )"
+          ]
+        },
+        {
+          "theater": "Sambíóin Álfabakka",
+          "schedule": [
+            "17:50 (3)",
+            "20:00 (3)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Egilshöll",
+          "schedule": [
+            "17:50 (3)",
+            "20:00 (3)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Akureyri",
+          "schedule": [
+            "22:10 (B)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kvinden i buret",
+      "released": "2013",
+      "restricted": "14 ára",
+      "imdb": "7.2/10  669 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8714_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "20:00",
+            "22:15"
+          ]
+        },
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "22:15"
+          ]
+        },
+        {
+          "theater": "Borgarbíó",
+          "schedule": [
+            "18:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Málmhaus",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "7.5/10  115 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/plakat-1378151401.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "17:45"
+          ]
+        },
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "17:45",
+            "20:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rush",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "8.3/10  44,474 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8310_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Sambíóin Egilshöll",
+          "schedule": [
+            "18:00 (4)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prisoners",
+      "released": "2013",
+      "restricted": "16 ára",
+      "imdb": "8.1/10  42,104 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8579_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Sambíóin Álfabakka",
+          "schedule": [
+            "18:00 (2)",
+            "20:00 (B)",
+            "21:00 (2)",
+            "22:10 (3)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Kringlunni",
+          "schedule": [
+            "20:00 (2)"
+          ]
+        },
+        {
+          "theater": "Sambíóin Egilshöll",
+          "schedule": [
+            "20:30 (4)",
+            "22:10 (3)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Turbo",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "6.3/10  14,679 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/7858_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Smárabíó",
+          "schedule": [
+            "15:30"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "About Time",
+      "released": "2013",
+      "restricted": "10 ára",
+      "imdb": "7.7/10  11,206 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8294_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Laugarásbíó",
+          "schedule": [
+            "21:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "VI ÄR BÄST",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "7.1/10  301 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/mv5bndcyodq0odazm15bml5banbnxkftztgwotqxmzkxmde@._v1_sy317_cr101,0,214,317_-1378570347.jpg",
+      "showtimes": [
+        {
+          "theater": "Bíó Paradís",
+          "schedule": [
+            "18:00",
+            "20:00",
+            "22:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "To the Wonder",
+      "released": "2012",
+      "restricted": "Öllum leyfð",
+      "imdb": "6.1/10  10,870 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/8836_500.jpg",
+      "showtimes": [
+        {
+          "theater": "Bíó Paradís",
+          "schedule": [
+            "20:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Planes",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "5.3/10  8,303 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/flugvélar-1375722099.jpg",
+      "showtimes": [
+        {
+          "theater": "Sambíóin Álfabakka",
+          "schedule": [
+            "18:00 (ÍSL TAL B)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hross í oss",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "8.2/10  36 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/hrosss-1375721995.jpg",
+      "showtimes": [
+        {
+          "theater": "Háskólabíó",
+          "schedule": [
+            "18:00",
+            "20:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Búðin",
+      "released": "2013",
+      "restricted": "Öllum leyfð",
+      "imdb": "",
+      "image": "http://kvikmyndir.is/images/poster/121109-1380239411.jpg",
+      "showtimes": [
+        {
+          "theater": "Bíó Paradís",
+          "schedule": [
+            "18:00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mud",
+      "released": "2013",
+      "restricted": "12 ára",
+      "imdb": "7.5/10  44,630 atkv.",
+      "image": "http://kvikmyndir.is/images/poster/mud-poster-1359990467.jpg",
+      "showtimes": [
+        {
+          "theater": "Bíó Paradís",
+          "schedule": [
+            "22:10"
+          ]
+        }
+      ]
+    }
+  ]
+}
