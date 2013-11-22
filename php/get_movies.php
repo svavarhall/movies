@@ -2,9 +2,7 @@
     
     if (!apc_fetch('movies')) {
         // JSON URL which should be requested
-        // $json_url = 'http://apis.is/cinema';
-        $json_url = 'debug/cinema.debug.json';
-        
+         $json_url = 'http://apis.is/cinema/';
         // Initializing curl
         $ch = curl_init( $json_url );
         // Configuring curl options
@@ -20,40 +18,9 @@
         apc_store('key1', $data, 600);
     } else {
         $data = apc_fetch('movies');
-    }   
+    }
     
-    $result = file_get_contents('debug/cinema.debug.json');
-    $data = json_decode($result);
-    
-    /*
-    foreach($data->results as $movie) {
-        echo '<div class="row">';
-        echo '<div class="col-sm-6 col-md-4">';
-        echo '<div class="thumbnail">';
-        echo '<img src=" ' . $movie->image . ' " alt="movie poster" width="200">';
-        echo      '<div class="caption">';
-        echo        '<h3>' . $movie->title . '</h3>';
-        echo       '<p>'. $movie->released . '</p>';
-        echo       '<p>'. $movie->restricted . '</p>';
-        echo       '<p>'. $movie->imdb . '</p>';
-        echo       '<p>'. $movie->released . '</p>';
-
-        foreach($movie->showtimes as $showtimes) {
-             echo '<p>'. $showtimes->theater . '</p>';
-
-             foreach($showtimes->schedule as $time) {
-                $strTime = substr($time, 0, 5);
-                echo '<span data-startTime="' . $strTime . '" class="label label-default">'. $time .'</span>';
-                if (!in_array($strTime, $times)) {
-                   array_push($times, $strTime);
-                }
-            }
-        }
-        echo '</div></div></div></div>';
-    } */
-
-
-
+   
     $times = array();
     $id = 1;
     foreach($data->results as $movie) {

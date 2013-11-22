@@ -31,7 +31,7 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Heim</a></li>
-          <li><a href="#">Leit</a></li>
+          <li><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
           <li><a href="#">Myndir</a></li>
           <li><a href="#">Skráning</a></li>

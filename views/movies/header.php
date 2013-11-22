@@ -29,10 +29,10 @@
             <div class="header">
                 <ul class="nav nav-pills pull-right">
                     <li ><a href="./index.php">Heim</a></li>
-                    <li><a href="#">Leit</a></li>
+                    <li><a href="./search.php">Leit</a></li>
                     <li class="active"><a href="./movies.php">Kvikmyndahús</a></li>
                     <li><a href="#">Myndir</a></li>
-                    <li><a href="#">Skránin</a></li>
+                    <li><a href="#">Skráning</a></li>
                 </ul>
                 <h3 class="text-muted">Kvikmyndavefurinn</h3>
         </div>
