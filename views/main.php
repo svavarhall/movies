@@ -34,7 +34,7 @@
           <li><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
           <li><a href="#">Myndir</a></li>
-          <li><a href="#">Skráning</a></li>
+          <li><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Vefforitun lokaverkefni</title>
+    <title>Vefforritun lokaverkefni</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -31,24 +31,28 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a href="./index.php">Heim</a></li>
-          <li class="active"><a href="./search.php">Leit</a></li>
+          <li><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
           <li><a href="#">Myndir</a></li>
-          <li><a href="./signup.php">Skráning</a></li>
+          <li class="active"><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
-      <h3 class="text-muted">Settu inn upplýsingar um kvikmynd hér og smelltu svo á sækja</h3>
-      <form class="navbar-form navbar-left" role="search">
+      <h3 class="text-muted">Skráðu þig á Kvikmyndavefinn</h3>
+      <form class="navbar-form navbar-left" role="search"
+      action="php/db_connection.php">
 
-        <label for="title" class="text-muted">Titill: </label>
-        <input id="title" type="text" class="form-control" placeholder="The Hobbit">
+        <label for="user" class="text-muted">Nafn: </label>
+        <input id="user" type="text" class="form-control" placeholder="Jón Jónsson">
 
-        <label for="year" class="text-muted">Ár: </label>
-        <input id="year" type="text" class="form-control" placeholder="2013">
+        <label for="pass" class="text-muted">Lykilorð: </label>
+        <input id="pass" type="text" class="form-control" placeholder="**********">
+
+        <label for="mail" class="text-muted">Netfang: </label>
+        <input id="mail" type="text" class="form-control" placeholder="notandi@simafyrirtaeki.is">
 
 
-        <button type="submit" class="btn btn-default">Sækja</button>
+        <button type="submit" class="btn btn-default" name="submit">Skrá</button>
  
       </form>
-      <h3 class="text-muted">Leitarniðurstöður:</h3>
+      <h3 class="text-muted"></h3>
