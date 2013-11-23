@@ -10,6 +10,10 @@
 
     <title>Vefforitun lokaverkefni</title>
 
+    <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+    <script src="js/search.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
@@ -39,13 +43,13 @@
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
       <h3 class="text-muted">Settu inn upplýsingar um kvikmynd hér og smelltu svo á sækja</h3>
-      <form class="navbar-form navbar-left" role="search">
+      <form action="php/get_results.php" method="get" id="search" class="navbar-form navbar-left" role="search">
 
         <label for="title" class="text-muted">Titill: </label>
-        <input id="title" type="text" class="form-control" placeholder="The Hobbit">
+        <input id="title" name="title" type="text" class="form-control" placeholder="The Hobbit">
 
         <label for="year" class="text-muted">Ár: </label>
-        <input id="year" type="text" class="form-control" placeholder="2013">
+        <input id="year" name="year" type="text" class="form-control" placeholder="2013">
 
 
         <button type="submit" class="btn btn-default">Sækja</button>

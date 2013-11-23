@@ -1,9 +1,10 @@
 
 .movie {
     width: 100%;
+    font-size: 1em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0.5em;
     background: #F2F2F2;
     border: 1px solid gray;
 }
@@ -24,24 +25,21 @@
 }
 .title {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
-.time {
-    margin-right: 1em;
-    display: inline;
+
+.movie td {
+   vertical-align:top;
+   padding-left: 0.5em; 
 }
-.theater {
-    font-weight: bold;
-    color: #0040FF;
-}
-td {
-   vertical-align:top; 
-}
-td img {
+.movie td img {
     float: right;
 }
 
-
-h1 {
+.movie h1 {
     text-align: center;
+}
+
+.label {
+    display: inline-block;
 }

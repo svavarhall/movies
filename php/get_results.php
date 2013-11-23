@@ -1,28 +1,28 @@
 <?php    
     
-    if (!apc_fetch('movies')) {
-        // JSON URL which should be requested
-         $json_url = 'http://apis.is/cinema/';
-        // Initializing curl
-        $ch = curl_init( $json_url );
-        // Configuring curl options
-        $options = array(
+    // you can access the values posted by jQuery.ajax
+    // through the global variable $_POST, like this:
+    $title = $_GET['title'];
+    $json_url = 'http://mymovieapi.com/?title=' .$title. '&type=json&limit=10';
+    // Initializing curl
+    $ch = curl_init( $json_url );
+    // Configuring curl assert_options(what)
+    $options = array(
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => array('Content-type: application/json') ,
-        );
-        // Setting curl options
-        curl_setopt_array( $ch, $options );
-        // Getting results
-        $result =  curl_exec($ch); // Getting JSON result string
-        $data = json_decode($result);
-        apc_store('key1', $data, 600);
-    } else {
-        $data = apc_fetch('movies');
-    }
-    
-   
-    $times = array();
-    $id = 1;
+    );
+    // Setting curl options
+    curl_setopt_array( $ch, $options );
+    // Getting results
+    $result =  curl_exec($ch); // Getting JSON result string
+
+    $data = json_decode($result);
+    var_dump($data);
+    //foreach()
+
+
+    include('views/search/header.php');
+
     foreach($data->results as $movie) {
 
         $len = 4 + count($movie->showtimes) * 2; 
@@ -54,6 +54,6 @@
 
     echo '</table>';
     }
+    include('views/search/footer.php');
 ?>
-
 

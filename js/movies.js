@@ -10,7 +10,7 @@ $(function() {
                     var willShow = false;
                     var id = $(this).attr('id');
                     $(this).hide();
-                    $("#" + id + " tbody tr td .time").each(function() {
+                    $("#" + id + " tbody tr td span").each(function() {
                         willShow = false;
                             
                         var sTime = this.dataset.starttime.substring(0,2);

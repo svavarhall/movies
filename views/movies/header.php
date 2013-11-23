@@ -2,19 +2,27 @@
 <html lang="is">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
         <title>Sýningartímar</title>
         
-        <link rel="stylesheet" href="jquery/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
+        
         <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
         <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
         <script src="js/movies.js"></script>
-        <link href="css/movies.css" rel="stylesheet">
+        
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-
+        <link href="css/movies.css" rel="stylesheet">
+        <link rel="stylesheet" href="jquery/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
         <!-- Custom styles for this template -->
         <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
 
         <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 

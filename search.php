@@ -4,7 +4,6 @@
 
     // $_SERVER superglobal inniheldur upplýsingar um request, viljum vita um HTTP aðferð
     $method = $_SERVER['REQUEST_METHOD'];
-
     
 
     /** hér fyrir neðan búum við til síðuna úr nokkrum view-um **/
@@ -12,7 +11,6 @@
     // höfum alltaf hausinn og formið aðgengilegt
     include('views/search/header.php');
   
-    //require('php/get_movies.php');
     
     // loka síðu
     include('views/search/footer.php');
