@@ -39,13 +39,11 @@
 
         foreach($movie->showtimes as $showtimes) {
              echo '<tr class="theater"><td >' . $showtimes->theater . '</td></tr>';
-             //echo '<tr class="theater"><td ><span class="label label-primary">' . $showtimes->theater . '</span></td></tr>';
              echo '<tr><td >';
 
              foreach($showtimes->schedule as $time) {
                 $strTime = substr($time, 0, 5);
                 echo '<span class="label label-default" data-startTime="' . $strTime . '">' . $time . '</span>';
-                //echo '<div class="time" data-startTime="' . $strTime . '">' . $time . '</div>';
                 if (!in_array($strTime, $times)) {
                    array_push($times, $strTime);
                 }

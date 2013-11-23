@@ -1,4 +1,3 @@
-      </div>
       <div class="footer">
         <p>&copy; Sigurður Karlsson, Svavar Árni Halldórsson</p>
       </div>

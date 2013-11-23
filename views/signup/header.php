@@ -8,13 +8,14 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Vefforritun lokaverkefni</title>
+    <title>Skráning</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/allPages.css" rel="stylesheet">
 
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -33,7 +34,7 @@
           <li><a href="./index.php">Heim</a></li>
           <li><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
-          <li><a href="#">Myndir</a></li>
+          <li><a href="./myMovies.php">Myndir</a></li>
           <li class="active"><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>

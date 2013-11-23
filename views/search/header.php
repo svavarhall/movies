@@ -8,9 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Vefforitun lokaverkefni</title>
+    <title>Kvikmyndaleit</title>
 
-    <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
     <script src="js/search.js"></script>
     <script src="jquery/jquery.min.js"></script>
     
@@ -19,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/allPages.css" rel="stylesheet">
 
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -37,7 +37,7 @@
           <li><a href="./index.php">Heim</a></li>
           <li class="active"><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
-          <li><a href="#">Myndir</a></li>
+          <li><a href="./myMovies.php">Myndir</a></li>
           <li><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>

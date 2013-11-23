@@ -8,22 +8,19 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-        <title>Sýningartímar</title>
+        <title>Mínar myndir</title>
         
         
         <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
         <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
-        <script src="js/movies.js"></script>
         
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
         <!-- Custom styles for this template -->
         <link href="css/jumbotron-narrow.css" rel="stylesheet">
-        <link rel="stylesheet" href="jquery/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
-        <link href="css/movies.css" rel="stylesheet">
         <link href="css/allPages.css" rel="stylesheet">
-        
 
 
         <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -40,20 +37,13 @@
                 <ul class="nav nav-pills pull-right">
                     <li ><a href="./index.php">Heim</a></li>
                     <li><a href="./search.php">Leit</a></li>
-                    <li class="active"><a href="./movies.php">Kvikmyndahús</a></li>
-                    <li><a href="./myMovies.php">Myndir</a></li>
+                    <li ><a href="./movies.php">Kvikmyndahús</a></li>
+                    <li class="active"><a href="./myMovies.php">Myndir</a></li>
                     <li><a href="./signup.php">Skráning</a></li>
                 </ul>
                 <h3 class="text-muted">Kvikmyndavefurinn</h3>
-        </div>
-        <div class="wrapper">
-            <h2 class="text-muted">Sýningartímar Kvikmyndahúsa</h2>
-            <p id="range">
-                <label for="time-range">Tímabil:</label>
-                <input type="text" id="time-range" />
-            </p>
-                <div id="slider-range"></div>
-            
-            <br>
+            </div>
+
+
 
 
