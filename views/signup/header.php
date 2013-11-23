@@ -39,19 +39,25 @@
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
+      <?php if (sizeof($signup->errors()) > 0): ?>
+      <div class="errors">
+        <ul>
+          <?php foreach ($signup->errors() as $error): ?>
+          <li><label for="<?php echo $error->field; ?>"><?php echo $error->error; ?></label></li>
+        <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
+      
       <h3 class="text-muted">Skráðu þig á Kvikmyndavefinn</h3>
-      <form class="navbar-form navbar-left" role="search"
-      action="php/db_connection.php">
+      <form class="navbar-form navbar-left" method="post"
+      action="signup.php">
 
-        <label for="user" class="text-muted">Nafn: </label>
-        <input id="user" type="text" class="form-control" placeholder="Jón Jónsson">
+        <label for="username" class="text-muted">Nafn: </label>
+        <input id="username" name="username" type="text" class="form-control" placeholder="Jón Jónsson">
 
-        <label for="pass" class="text-muted">Lykilorð: </label>
-        <input id="pass" type="text" class="form-control" placeholder="**********">
-
-        <label for="mail" class="text-muted">Netfang: </label>
-        <input id="mail" type="text" class="form-control" placeholder="notandi@simafyrirtaeki.is">
-
+        <label for="password" class="text-muted">Lykilorð: </label>
+        <input id="password" name="password" type="text" class="form-control" placeholder="**********">
 
         <button type="submit" class="btn btn-default" name="submit">Skrá</button>
  

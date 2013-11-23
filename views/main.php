@@ -34,7 +34,7 @@
           <li class="active"><a href="#">Heim</a></li>
           <li><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
-          <li><a href="#">Myndir</a></li>
+          <li><a href="./myMovies.php">Myndir</a></li>
           <li><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
@@ -44,7 +44,7 @@
         <h1>Allt um bíómyndir</h1>
         <p class="lead">fylgstu með nýjustu myndunum í bíó, skráðu þær myndir sem þú
           ert búinn að sjá og notaðu leitina okkar</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Skráðu þig hér</a></p>
+        <p><a class="btn btn-lg btn-success" href="./signup.php" role="button">Skráðu þig hér</a></p>
       </div>
 
       <div class="row marketing">
