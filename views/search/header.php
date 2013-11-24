@@ -10,7 +10,7 @@
 
     <title>Kvikmyndaleit</title>
 
-    <script src="js/search.js"></script>
+    
     <script src="jquery/jquery.min.js"></script>
     
     <!-- Bootstrap core CSS -->
@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
     <link href="css/allPages.css" rel="stylesheet">
 
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,17 +43,27 @@
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
-      <h3 class="text-muted">Settu inn upplýsingar um kvikmynd hér og smelltu svo á sækja</h3>
-      <form action="php/get_results.php" method="get" id="search" class="navbar-form navbar-left" role="search">
-
-        <label for="title" class="text-muted">Titill: </label>
-        <input id="title" name="title" type="text" class="form-control" placeholder="The Hobbit">
-
-        <label for="year" class="text-muted">Ár: </label>
-        <input id="year" name="year" type="text" class="form-control" placeholder="2013">
-
-
-        <button type="submit" class="btn btn-default">Sækja</button>
- 
+      <h4 class="text-muted">Leitaðu að kvikmynd hér:</h4>
+      <form  method="get" id="search" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <label for="title" class="col-sm-2 control-label">Titill:</label>
+          <div class="col-sm-10">
+            <input id="title" name="title" type="text" class="form-control" placeholder="The Hobbit">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="year" class="col-sm-2 control-label">Ár: </label>
+          <div class="col-sm-10">
+            <input id="year" name="year" type="text" class="form-control" placeholder="2013">
+          </div>
+        </div>
+        <div class="form-group">
+          <div id="search" class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" disabled="disabled">Sækja</button>
+          </div>
+        </div> 
       </form>
-      <h3 class="text-muted">Leitarniðurstöður:</h3>
+
+      <h4 class="text-muted">Leitarniðurstöður:</h4>
+      <div id="results" class="panel-group" id="accordion">
+      </div>
