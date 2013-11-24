@@ -11,6 +11,7 @@
     <title>Vefforitun lokaverkefni</title>
     <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
     <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+    <script src="jquery/jquery.cookie.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -47,10 +48,10 @@
         <h1>Allt um bíómyndir</h1>
         <p class="lead">fylgstu með nýjustu myndunum í bíó, skráðu þær myndir sem þú
           ert búinn að sjá og notaðu leitina okkar</p>
-        <p><a class="btn btn-lg btn-success" href="./signup.php" role="button">Póstlisti</a></p>
+        <p><a class="btn btn-lg btn-primary" href="./signup.php" role="button">Póstlisti</a></p>
       </div>
       <div class="text-center">
-        <h4 class="text-muted">Væntanlegt í bíó</h4>
+        <h3 class="text-muted">Væntanlegt í bíó</h3>
       </div>
       
       <div id="results" class="row marketing">
