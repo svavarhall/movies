@@ -14,6 +14,7 @@
         <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
         <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
         
+        
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -38,11 +39,17 @@
                     <li ><a href="./index.php">Heim</a></li>
                     <li><a href="./search.php">Leit</a></li>
                     <li ><a href="./movies.php">Kvikmyndahús</a></li>
-                    <li class="active"><a href="./myMovies.php">Myndir</a></li>
+                    <li class="active"><a href="./myMovies.php">Mínar myndir</a></li>
                     <li><a href="./signup.php">Skráning</a></li>
                 </ul>
                 <h3 class="text-muted">Kvikmyndavefurinn</h3>
             </div>
+            <h3 class="text-muted">Mínar myndir:</h3>
+            <ul id="myMovies" class="list-group">
+            </ul>
+            <ul id="results"></ul>
+
+
 
 
 

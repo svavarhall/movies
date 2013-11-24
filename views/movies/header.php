@@ -41,13 +41,13 @@
                     <li ><a href="./index.php">Heim</a></li>
                     <li><a href="./search.php">Leit</a></li>
                     <li class="active"><a href="./movies.php">Kvikmyndahús</a></li>
-                    <li><a href="./myMovies.php">Myndir</a></li>
+                    <li><a href="./myMovies.php">Mínar myndir</a></li>
                     <li><a href="./signup.php">Skráning</a></li>
                 </ul>
                 <h3 class="text-muted">Kvikmyndavefurinn</h3>
         </div>
         <div class="wrapper">
-            <h2 class="text-muted">Sýningartímar Kvikmyndahúsa</h2>
+            <h3 class="text-muted">Sýningartímar Kvikmyndahúsa</h3>
             <p id="range">
                 <label for="time-range">Tímabil:</label>
                 <input type="text" id="time-range" />

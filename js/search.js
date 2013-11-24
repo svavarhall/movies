@@ -2,9 +2,11 @@
 var request;
 
 var titleHeader = '<div class="panel panel-default" ><div class="panel-heading">' +
-                '<h4 class="panel-title"><a data-toggle="collapse"' +
-                'data-parent="#accordion" href="#';
-var titleFooter = '</a></h4></div>';
+                '<h4 class="panel-title">';
+var titleFooter = '</h4></div>';
+
+var star = '<div class="pull-right"><button id="save" type="button" class="btn btn-default btn-xs">' +
+        '<span class="glyphicon glyphicon-star"></span></button></div>';
 
 var bodyHeader = ' <div data-toggle="collapse" id="';
 var bodyMiddle = '" class="panel-collapse collapse in"><div class="panel-body">';
@@ -39,10 +41,10 @@ $("#search").submit(function(event){
             if(!movie.rating) movie.rating = "Engar upplýsingar";
             if(!movie.genres) movie.genres = "Engar upplýsingar";
             if(!movie.plot_simple) movie.plot_simple = "Engar upplýsingar";
-            $("#results").append(titleHeader + i + '">' +movie.title +
-                titleFooter + bodyHeader + i + bodyMiddle +
+            $("#results").append(titleHeader + movie.title +
+                star+ titleFooter + bodyHeader + i + bodyMiddle +
                 '<dl class="dl-horizontal">' +
-                '<dt>Útgáfuár</dt><dd>'+ movie.year +'</dd>' +
+                '<dt>Útgáfuár</dt><dd id="year">'+ movie.year +'</dd>' +
                 '<dt>IMDB einkunn</dt><dd>'+ movie.rating +'</dd>' +
                 '<dt>Tegund</dt><dd>'+ movie.genres +'</dd>' +
                 '<dt>Söguþráður</dt><dd>'+ movie.plot_simple +'</dd>' +
@@ -73,6 +75,8 @@ $("#search").submit(function(event){
 
     // prevent default posting of form
     event.preventDefault();
+
+    
 });
 
 $(document).ready(function() {
@@ -80,7 +84,7 @@ $(document).ready(function() {
 
         var empty = false;
         $('#title').each(function() {
-            if ($(this).val().length == 0) {
+            if ($(this).val().length === 0) {
                 empty = true;
             }
         });
@@ -91,4 +95,16 @@ $(document).ready(function() {
             $('#search button').removeAttr('disabled');
         }
     });
+
+    var prefix = "localStorage-";
+    $("#results").on("click", function (evt) {
+        var key = $(evt.target).closest("h4").text();
+        var value = $(evt.target).closest("h4").text();
+        localStorage.setItem(prefix + key, value);
+    });
+
 });
+    
+
+
+

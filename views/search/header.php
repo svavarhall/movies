@@ -38,12 +38,13 @@
           <li><a href="./index.php">Heim</a></li>
           <li class="active"><a href="./search.php">Leit</a></li>
           <li><a href="./movies.php">Kvikmyndahús</a></li>
-          <li><a href="./myMovies.php">Myndir</a></li>
+          <li><a href="./myMovies.php">Mínar myndir</a></li>
           <li><a href="./signup.php">Skráning</a></li>
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
-      <h4 class="text-muted">Leitaðu að kvikmynd hér:</h4>
+      <h4 class="text-muted">Kvikmyndaleit. Smelltu á stjörnuna til að vista 
+        undir mínar myndir.</h4>
       <form  method="get" id="search" class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <label for="title" class="col-sm-2 control-label">Titill:</label>
