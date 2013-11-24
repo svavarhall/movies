@@ -44,7 +44,11 @@
                 </ul>
                 <h3 class="text-muted">Kvikmyndavefurinn</h3>
             </div>
-            <h3 class="text-muted">Mínar myndir:</h3>
+            <div class="text-center">
+                <h3 class="text-muted">Mínar myndir:</h3>
+            </div>
+            
+
             <ul id="myMovies" class="list-group">
             </ul>
             <ul id="results"></ul>

@@ -43,8 +43,8 @@
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
-      <h4 class="text-muted">Kvikmyndaleit. Smelltu á stjörnuna til að vista 
-        undir mínar myndir.</h4>
+
+      <h3 class="text-muted">Kvikmyndaleit. Smelltu á stjörnuna til að vista undir mínar myndir.</h3>
       <form  method="get" id="search" class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <label for="title" class="col-sm-2 control-label">Titill:</label>
@@ -64,7 +64,7 @@
           </div>
         </div> 
       </form>
-
+    </br>
       <h4 class="text-muted">Leitarniðurstöður:</h4>
       <div id="results" class="panel-group" id="accordion">
       </div>

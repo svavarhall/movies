@@ -15,7 +15,7 @@
         // Getting results
         $result =  curl_exec($ch); // Getting JSON result string
         $data = json_decode($result);
-        apc_store('key1', $data, 600);
+        apc_store('key1', $data, 86400);
     } else {
         $data = apc_fetch('movies');
     }
