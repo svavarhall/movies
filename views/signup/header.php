@@ -51,13 +51,16 @@
       </div>
       <?php endif; ?>
       
-      <form class="navbar-form navbar-left" method="post"
-      action="signup.php">
-
-        <label for="email" class="text-muted">Netfang: </label>
-        <input id="email" name="email" type="text" class="form-control" placeholder="notandi@simafyrirtaeki.is">
-
-        <button type="submit" class="btn btn-default" name="submit">Skrá</button>
- 
-      </form>
-      <h3 class="text-muted"></h3>
+      <div class="row">
+        <form class="form-horizontal" method="post" action="signup.php">
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Netfang:</label>
+            <div class="col-sm-8">
+              <input id="email" name="email" type="text" class="form-control" placeholder="notandi@simafyrirtaeki.is">
+            </div>
+            <div class="col-sm-2">
+              <button type="submit" class="btn btn-default">Skrá</button>
+            </div>     
+          </div>
+        </form>
+      </div>
