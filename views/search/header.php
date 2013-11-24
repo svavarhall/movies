@@ -59,12 +59,13 @@
           </div>
         </div>
         <div class="form-group">
-          <div id="search" class="col-sm-offset-2 col-sm-10">
+          <div id="go" class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-default" disabled="disabled">Sækja</button>
           </div>
         </div> 
       </form>
-    </br>
+
+
       <h4 class="text-muted">Leitarniðurstöður:</h4>
       <div id="results" class="panel-group" id="accordion">
       </div>
