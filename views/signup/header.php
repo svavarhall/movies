@@ -49,15 +49,12 @@
       </div>
       <?php endif; ?>
       
-      <h3 class="text-muted">Skráðu þig á Kvikmyndavefinn</h3>
+      <h3 class="text-muted">Skráðu þig á póstlista Kvikmyndavefsins</h3>
       <form class="navbar-form navbar-left" method="post"
       action="signup.php">
 
-        <label for="username" class="text-muted">Nafn: </label>
-        <input id="username" name="username" type="text" class="form-control" placeholder="Jón Jónsson">
-
-        <label for="password" class="text-muted">Lykilorð: </label>
-        <input id="password" name="password" type="text" class="form-control" placeholder="**********">
+        <label for="email" class="text-muted">Netfang: </label>
+        <input id="email" name="email" type="text" class="form-control" placeholder="notandi@simafyrirtaeki.is">
 
         <button type="submit" class="btn btn-default" name="submit">Skrá</button>
  

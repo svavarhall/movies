@@ -17,8 +17,7 @@ function MakeError($field, $error)
 
 class Signup
 {
-	public $username;
-	public $password;
+	public $email;
 
 	private $errors;
 
@@ -29,36 +28,29 @@ class Signup
 
 	public function populate($data)
 	{
-		$this->username	= $this->get($data, 'username');
-		$this->password = $this->get($data, 'password');
+		$this->email	= $this->get($data, 'email');
 	}
 
 	public function valid()
 	{
-		if ($this->username === '')
+		if ($this->email === '')
 		{
-			$this->errors[] = MakeError('username', 'Velja þarf notandanafn');
-		}
-		if($this->password === '')
-		{
-			$this->errors[] = MakeError('password','Velja þarf lykilorð');
+			$this->errors[] = MakeError('email', 'Skrá þarf netfang');
 		}
 
-		if (strlen($this->username) > 128)
+		if (strlen($this->email) > 128)
 		{
-			$this->errors[] = MakeError('username', 'Notandanafn má ekki vera lengra en 128 stafir');
+			$this->errors[] = MakeError('email', 'Netfang má ekki vera lengra en 128 stafir');
 		}
-		if (strlen($this->password) < 8)
-		{
-			$this->errors[] = MakeError('password','Lykilorð verður að vera 8 stafir eða lengra að lengd');
-		}
+
+		//fleyrri valid email check to come...
+
 		return sizeof($this->errors) == 0;
 	}
 
 	public function insert()
 	{
-		return array('username' => $this->username,
-					 'password'=> $this->password);
+		return array('email' => $this->email);
 	}
 
 	public function errors()
