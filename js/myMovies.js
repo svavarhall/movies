@@ -9,7 +9,8 @@ function RewriteFromStorage() {
             //var value = localStorage[key]; also works
             var shortkey = key.replace(prefix, "");
             $("#results").append('<li class="list-group-item">' + value +
-                "<input key='"+ key +"'type='button' value='Delete'></li>");
+                '<div class="pull-right"><button key="' + key + '" type="button"' +
+                'class="btn btn-warning btn-xs">Eyða</button></div></li>');
         }
     }
 }

@@ -21,8 +21,7 @@
     }
     
     if(empty($data)) {
-        echo '<div class="alert alert-danger">Því miður er þjónustan ' .
-        'óvirk að svo stöddu.</div>';
+        echo '<div class="alert alert-danger">Ekki náðist samband við þjónustu.</div>';
     } else {
 
    

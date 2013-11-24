@@ -34,8 +34,10 @@ $("#search").submit(function(event){
 
     var url =  "http://mymovieapi.com/?type=json&limit=10&" + serializedData;
     request = $.getJSON(url, null, function(movies) {
-        console.log(movies);
-        for(var i in movies) {
+        if(movies.error) { $("#results").append( '<div class="alert alert-warning">' +
+        'Mynd fannst ekki.</div>');
+        } else {
+            for(var i in movies) {
             movie = movies[i];
             if(!movie.year) movie.year = "Engar upplýsingar";
             if(!movie.rating) movie.rating = "Engar upplýsingar";
@@ -49,7 +51,11 @@ $("#search").submit(function(event){
                 '<dt>Tegund</dt><dd>'+ movie.genres +'</dd>' +
                 '<dt>Söguþráður</dt><dd>'+ movie.plot_simple +'</dd>' +
                 '</dl>' + bodyFooter);
+            }
         }
+        }).fail(function(d) {
+        $("#results").append( '<div class="alert alert-danger">' +
+        'Ekki náðist samband við þjónustu.</div>');
     });
     // callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
@@ -100,7 +106,9 @@ $(document).ready(function() {
     $("#results").on("click", function (evt) {
         var key = $(evt.target).closest("h4").text();
         var value = $(evt.target).closest("h4").text();
-        $(evt.target).css("color", "green");
+        $(evt.target).closest("button")
+            .css("background-color", "#5cb85c")
+            .css("color", "white");
         localStorage.setItem(prefix + key, value);
     });
 
