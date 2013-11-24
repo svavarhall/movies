@@ -39,17 +39,18 @@
         </ul>
         <h3 class="text-muted">Kvikmyndavefurinn</h3>
       </div>
+      <div class="center-text">
+        <h3 class="text-muted">Skráðu þig á póstlista Kvikmyndavefsins</h3>
+      </div>
+       
       <?php if (sizeof($signup->errors()) > 0): ?>
       <div class="errors">
-        <ul>
           <?php foreach ($signup->errors() as $error): ?>
-          <li><label for="<?php echo $error->field; ?>"><?php echo $error->error; ?></label></li>
+          <div class="alert alert-danger"><?php echo $error->error; ?></div>
         <?php endforeach; ?>
-        </ul>
       </div>
       <?php endif; ?>
       
-      <h3 class="text-muted">Skráðu þig á póstlista Kvikmyndavefsins</h3>
       <form class="navbar-form navbar-left" method="post"
       action="signup.php">
 
