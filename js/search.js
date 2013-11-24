@@ -100,6 +100,7 @@ $(document).ready(function() {
     $("#results").on("click", function (evt) {
         var key = $(evt.target).closest("h4").text();
         var value = $(evt.target).closest("h4").text();
+        $(evt.target).css("color", "green");
         localStorage.setItem(prefix + key, value);
     });
 
