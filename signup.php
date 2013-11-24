@@ -7,7 +7,7 @@
     // $_SERVER superglobal inniheldur upplýsingar um request, viljum vita um HTTP aðferð
     $method = $_SERVER['REQUEST_METHOD'];
 
-    $db = new PDO('sqlite:users.db');
+    $db = new PDO('sqlite:postlist.db');
 
     $signup = new Signup();
     
@@ -17,14 +17,14 @@
 
         if ($signup->valid())
         {
-            $insert = $db->prepare("INSERT INTO user (username, password) VALUES(:username, :password)");
+            $insert = $db->prepare("INSERT INTO postlist (email) VALUES(:email)");
             if (!$insert->execute($signup->insert()))
             {
-                echo 'Gat ekki skráð notanda! '.$db->errorInfo();
+                echo 'Netfang hefur nú þegar verið skráð! '.$db->errorInfo();
             }
             else
             {
-                header('Location: signup.php?success=true'); //spurning
+                header('Location: signup.php?success=true'); 
             }
         }
     }
