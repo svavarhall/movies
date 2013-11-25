@@ -10,6 +10,7 @@
 
     <title>Skráning</title>
 
+    <script src="jquery/jquery.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 

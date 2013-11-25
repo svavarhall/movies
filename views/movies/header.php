@@ -10,17 +10,15 @@
 
         <title>Sýningartímar</title>
         
-        
-        <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
-        <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+        <script src="jquery/jquery.min.js"></script>
+        <script src="jquery/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
         <script src="js/movies.js"></script>
         
-
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
         <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="jquery/jquery-ui/css/ui-slider/jquery-ui-1.10.3.custom.min.css" />
         <link href="css/jumbotron-narrow.css" rel="stylesheet">
-        <link rel="stylesheet" href="jquery/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
         <link href="css/movies.css" rel="stylesheet">
         <link href="css/allPages.css" rel="stylesheet">
         

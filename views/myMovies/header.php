@@ -9,13 +9,9 @@
         <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
         <title>Mínar myndir</title>
-        
-        
-        <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
-        <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
-        
-        
 
+        <script src="jquery/jquery.min.js"></script>
+        
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
@@ -32,26 +28,33 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
         </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li ><a href="./index.php">Heim</a></li>
-                    <li><a href="./search.php">Leit</a></li>
-                    <li ><a href="./movies.php">Kvikmyndahús</a></li>
-                    <li class="active"><a href="./myMovies.php">Mínar myndir</a></li>
-                    <li><a href="./signup.php">Skráning</a></li>
-                </ul>
-                <h3 class="text-muted">Kvikmyndavefurinn</h3>
-            </div>
-            <div class="text-center">
-                <h3 class="text-muted">Mínar myndir:</h3>
-            </div>
-            
+        <body>
+            <div class="container">
+                <div class="header">
+                    <ul class="nav nav-pills pull-right">
+                        <li ><a href="./index.php">Heim</a></li>
+                        <li><a href="./search.php">Leit</a></li>
+                        <li ><a href="./movies.php">Kvikmyndahús</a></li>
+                        <li class="active"><a href="./myMovies.php">Mínar myndir</a></li>
+                        <li><a href="./signup.php">Skráning</a></li>
+                    </ul>
+                    <h3 class="text-muted">Kvikmyndavefurinn</h3>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-muted">Mínar myndir:</h3>
+                </div>
+                
 
-            <ul id="myMovies" class="list-group">
-            </ul>
-            <ul id="results"></ul>
+                <ul id="myMovies" class="list-group">
+                </ul>
+                <ul class="list-group" id="results"></ul>
+
+            <div class="row">
+                <div class="text-center">
+                    <button id="removeAll" type="button"class="btn btn-warning btn-xs">Eyða öllum</button>
+                </div>
+            </div>
+
 
 
 

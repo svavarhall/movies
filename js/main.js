@@ -49,6 +49,7 @@ $(document).ready(function() {
                 if(!movie.original_title) movie.original_title = "Engar upplýsingar";
                 if(!movie.release_date) movie.release_date = "Engar upplýsingar";
                 if(!movie.vote_average) movie.vote_average = "Engar upplýsingar";
+                if(!movie.poster_path) movie.poster_path = "/";
                 if(i % 2 === 0) $("#results").append('<div class="row">');
                 $("#results").append('<div class="col-lg-6"><div class="thumbnail">' +
                     '<img src="'+ baseUrl + 'w185' + movie.poster_path +'" alt="movie poster">' +

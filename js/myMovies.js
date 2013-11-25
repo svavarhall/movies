@@ -20,4 +20,9 @@ $("#results").on("click", function (evt) {
     RewriteFromStorage();
 });
 
+$("#removeAll").on("click", function (evt) {
+    localStorage.clear();
+    RewriteFromStorage();
+});
+
 RewriteFromStorage();

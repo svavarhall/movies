@@ -8,9 +8,8 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Vefforitun lokaverkefni</title>
-    <script src="jquery/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
-    <script src="jquery/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+    <title>Kvikmyndavefurinn</title>
+    <script src="jquery/jquery.min.js"></script>
     <script src="jquery/jquery.cookie.js"></script>
 
     <!-- Bootstrap core CSS -->
