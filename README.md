@@ -85,13 +85,3 @@ gögn um vistaðar myndir sótt úr localstorage og birt með jQuery
 
 signup.php
 tenging við gagnagrunn, og validation fyrir <form> upplýsingar  er útfært í php
-
-    
-        
-        
-
-
-
-
-
-
