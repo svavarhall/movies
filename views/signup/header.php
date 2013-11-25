@@ -43,13 +43,28 @@
         <h3 class="text-muted">Skráðu þig á póstlista Kvikmyndavefsins</h3>
       </div>
        
-      <?php if (sizeof($signup->errors()) > 0): ?>
-      <div class="errors">
-          <?php foreach ($signup->errors() as $error): ?>
-          <div class="alert alert-danger"><?php echo $error->error; ?></div>
-        <?php endforeach; ?>
-      </div>
-      <?php endif; ?>
+      <?php
+      //Email check
+      if (sizeof($signup->errors()) > 0): 
+        echo '<div class="errors">';
+        foreach ($signup->errors() as $error):
+          echo '<div class="alert alert-danger">'.$error->error; 
+          echo '</div>';
+        endforeach;
+        echo '</div>';
+      endif;
+      //SQL impact
+      if ($impact){
+        echo '<div class="errors">';
+        echo '<div class="alert alert-warning">Netfang nú þegar á skrá!'; 
+        echo '</div></div>';
+      }
+      else if($successful){
+        echo '<div class="errors">';
+        echo '<div class="alert alert-success">Netfang skráð á póstlista.'; 
+        echo '</div></div>';
+      }
+       ?>
       
       <div class="row">
         <form class="form-horizontal" method="post" action="signup.php">

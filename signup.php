@@ -1,4 +1,6 @@
 <?php
+    $impact = False;
+    $successful = False;
 
     header('Content-Type: text/html; charset=utf-8');
 
@@ -20,18 +22,13 @@
             $insert = $db->prepare("INSERT INTO postlist (email) VALUES(:email)");
             if (!$insert->execute($signup->insert()))
             {
-                echo 'Netfang hefur nú þegar verið skráð! '.$db->errorInfo();
+                 $impact = TRUE;
             }
             else
             {
-                header('Location: signup.php?success=true'); 
+                $successful = TRUE; 
             }
         }
-    }
-    $selected_user = 0;
-    if (isset($_GET['signup']) && is_numeric($_GET['signup']))
-    {
-        $selected_user = $_GET['signup'];
     }
 
     /** hér fyrir neðan búum við til síðuna úr nokkrum view-um **/

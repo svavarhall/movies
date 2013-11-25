@@ -81,7 +81,6 @@ $("#search").submit(function(event){
 
     // prevent default posting of form
     event.preventDefault();
-
     
 });
 

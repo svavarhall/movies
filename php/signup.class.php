@@ -28,22 +28,15 @@ class Signup
 
 	public function populate($data)
 	{
-		$this->email	= $this->get($data, 'email');
+		$this->email = $this->get($data, 'email');
 	}
 
 	public function valid()
 	{
-		if ($this->email === '')
+		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL))
 		{
-			$this->errors[] = MakeError('email', 'Skrá þarf netfang');
+			$this->errors[] = MakeError('email', 'Þetta er ekki netfang, reyndu aftur...');
 		}
-
-		if (strlen($this->email) > 128)
-		{
-			$this->errors[] = MakeError('email', 'Netfang má ekki vera lengra en 128 stafir');
-		}
-
-		//fleyrri valid email check to come...
 
 		return sizeof($this->errors) == 0;
 	}
