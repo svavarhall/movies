@@ -35,7 +35,7 @@ class Signup
 	{
 		if(!filter_var($this->email, FILTER_VALIDATE_EMAIL))
 		{
-			$this->errors[] = MakeError('email', 'Þetta er ekki netfang, reyndu aftur...');
+			$this->errors[] = MakeError('email', '<strong>Villa:</strong> Þetta er ekki netfang, reyndu aftur...');
 		}
 
 		return sizeof($this->errors) == 0;

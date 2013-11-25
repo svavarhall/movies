@@ -23,7 +23,6 @@
             if (!$insert->execute($signup->insert()))
             {
                  $impact = TRUE;
-                 print_r($db->errorInfo());
             }
             else
             {
