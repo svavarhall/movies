@@ -10,7 +10,6 @@
 
     <title>Kvikmyndaleit</title>
 
-    
     <script src="jquery/jquery.min.js"></script>
     
     <!-- Bootstrap core CSS -->

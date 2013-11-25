@@ -1,5 +1,3 @@
-
-
 var request;
 var baseUrlRequest;
 var baseUrl;
@@ -18,7 +16,7 @@ $(document).ready(function() {
     }
     if($.cookie("baseUrl") === undefined) {
         baseUrlRequest = $.getJSON(config, null, function(apiInfo) {
-        baseUrl = apiInfo.images.base_url;     
+        baseUrl = apiInfo.images.base_url;
         });
 
         baseUrlRequest.done(function (response, textStatus, jqXHR){

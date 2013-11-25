@@ -1,12 +1,11 @@
 var prefix = "localStorage-";
 function RewriteFromStorage() {
     $("#results").empty();
-    for(var i = 0; i < localStorage.length; i++)    //******* length
+    for(var i = 0; i < localStorage.length; i++)
     {
-        var key = localStorage.key(i);              //******* key()
+        var key = localStorage.key(i);
         if(key.indexOf(prefix) === 0) {
-            var value = localStorage.getItem(key);  //******* getItem()
-            //var value = localStorage[key]; also works
+            var value = localStorage.getItem(key);
             var shortkey = key.replace(prefix, "");
             $("#results").append('<li class="list-group-item">' + value +
                 '<div class="pull-right"><button key="' + key + '" type="button"' +
