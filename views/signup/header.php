@@ -46,29 +46,29 @@
        
       <?php
       //Email check
-      if (sizeof($signup->errors()) > 0): 
+      if (sizeof($signup->errors()) > 0) {
         echo '<div class="errors">';
-        foreach ($signup->errors() as $error):
-          echo '<div class="alert alert-danger">'.$error->error; 
+        foreach ($signup->errors() as $error) {
+          echo '<div class="alert alert-danger">'.$error->error;
           echo '</div>';
-        endforeach;
+        }
         echo '</div>';
-      endif;
+      }
       //SQL impact
       if ($impact){
         echo '<div class="errors">';
-        echo '<div class="alert alert-warning">Netfang nú þegar á skrá!'; 
+        echo '<div class="alert alert-warning"><strong>Aðvörun:</strong> Netfang nú þegar á skrá!'; 
         echo '</div></div>';
       }
       else if($successful){
         echo '<div class="errors">';
-        echo '<div class="alert alert-success">Netfang skráð á póstlista.'; 
+        echo '<div class="alert alert-success"><strong>Skráning tókst:</strong> Netfang skráð á póstlista.'; 
         echo '</div></div>';
       }
        ?>
       
       <div class="row">
-        <form class="form-horizontal" method="post" action="signup.php">
+        <form class="navbar-form" method="post" action="signup.php">
           <div class="form-group">
             <label for="email" class="col-sm-2 control-label">Netfang:</label>
             <div class="col-sm-8">
