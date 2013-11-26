@@ -109,6 +109,7 @@ $(document).ready(function() {
             var indexString = localStorage["index"];
             var index;
             var exists = false;
+            $("#notice").empty();
 
             if(indexString === undefined) {
                 index = [];
@@ -125,9 +126,10 @@ $(document).ready(function() {
                 index.push(key);
                 localStorage["index"] = JSON.stringify(index);
                 localStorage[prefix + key] = value;
-                console.log("Innsetning tókst");
-            } else
-                console.log("Mynd hefur þegar verið bætt við");
+                $("#notice").append('<div class="alert alert-success">Mynd skráð í mínar myndir.</div>');
+            } else {
+                $("#notice").append('<div class="alert alert-warning">Mynd er nú þegar á skrá.</div>'); 
+            }
             $(evt.target).closest("button")
                 .css("background-color", "#5cb85c")
                 .css("color", "white"); 
