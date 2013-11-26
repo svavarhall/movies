@@ -6,7 +6,7 @@ var titleHeader = '<div class="panel panel-default" ><div class="panel-heading">
 var titleFooter = '</h4></div>';
 
 var star = '<div class="pull-right"><button id="save" type="button" class="btn btn-default btn-xs">' +
-        '<span class="glyphicon glyphicon-star"></span></button></div>';
+        '<span id="save" class="glyphicon glyphicon-star"></span></button></div>';
 
 var bodyHeader = ' <div data-toggle="collapse" id="';
 var bodyMiddle = '" class="panel-collapse collapse in"><div class="panel-body">';
@@ -103,12 +103,36 @@ $(document).ready(function() {
 
     var prefix = "localStorage-";
     $("#results").on("click", function (evt) {
-        var key = uniqueId();
-        var value = $(evt.target).closest("h4").text();
-        $(evt.target).closest("button")
-            .css("background-color", "#5cb85c")
-            .css("color", "white");
-        localStorage.setItem(prefix + key, value);
+        if ($(evt.target).attr('id') === 'save') {
+            var key = uniqueId();
+            var value = $(evt.target).closest("h4").text();
+            var indexString = localStorage["index"];
+            var index;
+            var exists = false;
+
+            if(indexString === undefined) {
+                index = [];
+
+            } else {
+                index = JSON.parse(indexString);
+                for(var i = 0; i < index.length; i++) {
+                    var prefixKey = prefix + index[i];
+                    if (localStorage[prefixKey] === value) { exists = true; }
+                }
+            }
+            
+            if(!exists) {
+                index.push(key);
+                localStorage["index"] = JSON.stringify(index);
+                localStorage[prefix + key] = value;
+                console.log("Innsetning tókst");
+            } else
+                console.log("Mynd hefur þegar verið bætt við");
+            $(evt.target).closest("button")
+                .css("background-color", "#5cb85c")
+                .css("color", "white"); 
+        }
+        
     });
 
 });
