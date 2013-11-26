@@ -57,7 +57,8 @@
 
 ###Leitar síða:
     Renna í gegnum localstorage þegar gögn eru sótt og gera hnappa 
-    græna við þær myndir sem eru þegar á skrá.
+    græna við þær myndir sem eru þegar á skrá. Láta alert gluggann
+    birtast fyrir neðan hverja mynd fyrir sig í staðinn fyrir efst á síðu.
 
 ###Mínar myndir síða:
 	Laga margin fyrir neðan eyða öllum hnappinn.
