@@ -37,7 +37,7 @@
 
 ###signup.php
     Skráning á póstlista.
-    Tenging við gagnagrunn og validation fyrir form upplýsingar er útfært í php.
+    Tenging við sqlite3 gagnagrunn og validation fyrir form upplýsingar er útfært í php.
 
 
 ##Hlutir sem okkur finnst að mætti bæta við/laga:
