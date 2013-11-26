@@ -27,7 +27,9 @@
     mymovieapi.com og vistaðar í localstorage með jQuery ef notandi smellir á stjörnu hnapp.
 
 ###movies.php
-    json gögn frá Íslensku kvikmyndahúsunum eru sótt af apis.is/cinema með php curl og myndir birtar, hægt er að velja tíma dags sem leitast er eftir. Gögnin vistuð og sótt með apc_store og apc_fetch til að gera síða hraðvirkari. 
+    json gögn frá Íslensku kvikmyndahúsunum eru sótt af apis.is/cinema með php curl og myndir
+    birtar, hægt er að velja tíma dags sem leitast er eftir. 
+    Gögnin vistuð og sótt með apc_store og apc_fetch til að gera síða hraðvirkari. 
     JQuery ui slider er notaður fyrir síjun.
 
 ###myMovies.php
