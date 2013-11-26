@@ -1,7 +1,7 @@
 #movies
 ======
 
-vefforritun_final
+vefforitun_final
 
 ##Hlutir sem mætti bæta við/laga:
 
