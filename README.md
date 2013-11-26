@@ -1,18 +1,52 @@
 #movies
 ======
 
-vefforitun_final
+Lokaverkefni í TOL306G Vefforritun Haust 2013 við Háskóla Íslands.
 
-##Hlutir sem mætti bæta við/laga:
+Verkefni unnu Sigurður Karlsson og Svavar Árni Halldórsson.
 
-###Almennt: 
-	Leitarvélarbestun, betri tilill á síður.
+Hugsun bak við verkefnið var að sýna fram á að við værum búnir að ná tökum því helsta
+sem kennt var í námskeiðinu og setja upp snyrtilega og einfalda 
+kvikmyndasíðu sem myndi virka vel fyrir allar skjástærðir og væri
+útfærði bæði fram og bakenda virkni á borð við gagnagrunnavinnslu, javascript 
+með jquery og php.
+
+
+##Yfirlit yfir síður og virkni:
+
+Heildarútlit síðunar er fengið úr bootstrap framework-inu og er því
+skalanlegt niður á farsíma.
+
+###index.php: 
+json gögn um væntanlegar myndir í bíó sóttar af thetvdb.com með 
+jquery  getJSON(AJAX HTTP GET) aðgerð. 
+Gögnin eru geymd í gegnum jquery.cookies í sólarhring til að gera hana hraðvirkari.
+
+###search.php
+upplýsingar fyrir kvikmyndaleit eru sóttar á sama hátt og í index.php af 
+mymovieapi.com og vistaðar í localstorage með jQuery ef notandi smellir á stjörnu hnapp.
+
+###movies.php
+json gögn frá Íslensku kvikmyndahúsunum eru sótt af apis.is/cinema með php curl 
+og gögnin vistuð og sótt með apc_store og apc_fetch til að gera síða hraðvirkari. 
+JQuery ui slider er notaður fyrir síjun.
+
+###myMovies.php
+gögn um vistaðar myndir sótt úr localstorage og birt með jQuery
+
+###signup.php
+Skráningar á póstlista.
+Tenging við gagnagrunn og validation fyrir form upplýsingar er útfært í php.
+
+
+##Hlutir sem okkur finnst að mætti bæta við/laga:
 
 ###Forsíða:
 	Mætti bæta inn meiri gögnum og filtering:
-    - Í stað þess að vera eingöngu með væntanlegt í bíó þá mætti setja dropdown menu 
-    þar sem hægt er að velja, top lista á imbd, í sýningu o.fl. ef json formattið á gögnunum er eins.
-	Eins mætti setja inn add to my movies virkni af leitar síðunni.
+    Í stað þess að vera eingöngu með væntanlegt í bíó þá mætti setja dropdown 
+    menu þar sem t.d mætti velja top lista á imbd, í sýningu 
+    o.fl. ef json formattið á gögnunum er eins.
+	Eins mætti setja inn "bæta í mínar myndir" virkni af leitar síðunni.
 
 ###Bíó síða: 
     Setja upp bootstrap útgáfu (fyrir betra look á mobile) þ.e. á mobile birtist 
@@ -20,21 +54,17 @@ vefforitun_final
     Eins mætti setja inn add to my movies virkni af leitar síðunni.
 
 ###Leitar síða:
-    Laga villuna þar sem að í einhverjum tilfellum þá fer lykill með “” value inn í localstorage 
-    sem veldur því tómur movie hlutur birtist í Mínar myndir.
+    Renna í gegnum localstorage þegar gögn eru sótt og gera hnappa 
+    græna við þær myndir sem eru þegar á skrá.
 
 ###Mínar myndir síða:
-	Sjá að ofan.
-    Þegar tómur hlutir birtist veldur það því að ekki er hægt að henda út síðastu myndinni úr localstorage.
+	Laga margin fyrir neðan eyða öllum hnappinn.
 
-##Útgáfustjórn:
-    Við notuðumst við git til að annaðist útgáfustýringu og hægt er að nálgast repo-ið hérna
-    https://github.com/svavarhall/movies
 
 ##Yfirlit yfir villur:
 
 Validation: Css valation: 33 villur(bootstrap.css)
-HTML valitation: meta villur á bootstrap + ein id villa (tengt bootstrap)
+HTML valitation: meta villur á bootstrap
 
 ##HTML outline:
 
@@ -60,22 +90,4 @@ Kvikmyndavefurinn
 Kvikmyndavefurinn
     Skráðu þig á póstlista Kvikmyndavefsins
 
-##Yfirlit yfir síður og virkni:
-Heildarútlit síðunar er fengið úr bootstrap framework-inu
 
-###index.php: 
-json gögn um væntanlegar myndir sóttar af thetvdb.com með jquery og geymd í gegnum cookies með jQuery.
-
-###search.php
-upplýsingar fyrir kvikmyndaleit eru sóttar af mymovieapi.com á json sniði og vistaðar í localstorage allt með jQuery.
-
-###movies.php
-json gögn frá Íslensku kvikmyndahúsunum eru sótt af apis.is/cinema með php curl og 
-apc_store og apc_fetch notað til þessa að cache-a gögnin. 
-JQuery ui slider er notaður fyrir síjun.
-
-###myMovies.php
-gögn um vistaðar myndir sótt úr localstorage og birt með jQuery
-
-###signup.php
-tenging við gagnagrunn og validation fyrir <form> upplýsingar er útfært í php.
