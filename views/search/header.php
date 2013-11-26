@@ -67,5 +67,5 @@
 
       <h4 class="text-muted">Leitarniðurstöður:</h4>
       <div id="notice" class="error"></div>
-      <div id="results" class="panel-group" id="accordion">
+      <div id="results" class="panel-group">
       </div>

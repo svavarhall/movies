@@ -51,7 +51,7 @@
 
             <div class="row">
                 <div class="text-center">
-                    <button id="removeAll" type="button"class="btn btn-warning btn-xs">Eyða öllum</button>
+                    <button id="removeAll" type="button" class="btn btn-warning btn-xs">Eyða öllum</button>
                 </div>
             </div>
 
